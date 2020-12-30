@@ -1,0 +1,24 @@
+<% layout("layout/boilerplate") -%>
+    <div class="row"></div>
+
+
+    <div class="col-6 offset-3">
+        <h1>Upload Images</h1>
+        <form action="/campgrounds/<%=foundCamp._id%>" method="POST" enctype="multipart/form-data" class="mt-3">
+            <input type="file" name="image" multiple>
+
+
+            <% foundCamp.image.forEach(function(ele,i){ %>
+                <div>
+                    <img src="<%=ele.thumbnail%> " class="img-thumbnail">
+                </div>
+                <div>
+                    <label for="img-<%=i%>">Delete?</label>
+                    <input id="img-<%=i%>" type="checkbox" name="deletedImg[]" value="<%=ele.filename%>">
+                </div>
+                <% }) %>
+                    <button class="btn btn-success">Upload</button>
+
+        </form>
+
+    </div>
