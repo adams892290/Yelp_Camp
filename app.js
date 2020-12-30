@@ -126,8 +126,8 @@ app.use("/campgrounds/:id/reviews", reviewRoutes);
 app.use("/", userRoutes);
 
 
-
-app.listen(7000, function () {
+const port = process.env.PORT || 7000;
+app.listen(port, function () {
     console.log("Server is online");
 });
 
