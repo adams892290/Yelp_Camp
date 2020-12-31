@@ -89,6 +89,7 @@ const styleSrcUrls = [
     "https://kit-free.fontawesome.com/",
     "https://stackpath.bootstrapcdn.com/",
     "https://api.mapbox.com/",
+
     "https://api.tiles.mapbox.com/",
     "https://fonts.googleapis.com/",
     "https://use.fontawesome.com/",
@@ -99,7 +100,7 @@ const connectSrcUrls = [
     "https://b.tiles.mapbox.com/",
     "https://events.mapbox.com/",
 ];
-const fontSrcUrls = [];
+const fontSrcUrls = ["https://fonts.googleapis.com", "https://fonts.gstatic.com",];
 app.use(
     helmet.contentSecurityPolicy({
         directives: {
@@ -134,6 +135,30 @@ app.listen(port, function () {
 app.get("/", function (req, res) {
     res.render("home");
 });
+
+app.get("/wlogin", function (req, res) {
+    res.render("wish/wishlogin");
+});
+
+app.post("/wlogin", function (req, res) {
+    const { password } = req.body;
+    if (password === "knockknock") {
+        res.render("wish/index");
+    }
+});
+
+app.get("/wlogin/optionone", function (req, res) {
+    res.render("wish/optionone");
+});
+
+app.get("/wlogin/optiontwo", function (req, res) {
+    res.render("wish/optiontwo");
+});
+
+app.get("/wlogin/optionthree", function (req, res) {
+    res.render("wish/optionthree");
+});
+
 
 app.all("*", function (req, res, next) {
     throw new ExpressError(404, "Page not found!!!");

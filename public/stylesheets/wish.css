@@ -1,0 +1,63 @@
+#wishlogin{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://res.cloudinary.com/dqxnxg08n/image/upload/v1609316469/samples/landscapes/michael-dziedzic-1bjsASjhfkE-unsplash_poo0uz.jpg");
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+}
+
+#wish{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("https://res.cloudinary.com/dqxnxg08n/image/upload/v1609324339/samples/landscapes/lidya-nada-MD_ha01Bk7c-unsplash_s0dndp.jpg");
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+}
+
+.nav-link {
+    padding: 0.25rem 0;
+    font-weight: 700;
+    color: rgb(202, 27, 41);
+    margin-left: 1rem;
+    border-bottom: 0.25rem solid transparent;
+    }
+
+.nav-link:hover{
+    color: rgb(26, 99, 209);
+    border-bottom-color:rgba(214, 15, 15, 0.651);
+}
+
+h2{
+    
+    display: inline ;
+    
+}
+
+main{
+    font-family: cursive;
+    text-align: center;
+    color:rgb(224, 20, 30);
+    
+}
+
+.lead{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    color:rgb(224, 153, 20);
+}
+
+h3{
+    font-family: 'Hanalei Fill', cursive;
+}
+
+
+
+
+
+
+
+
